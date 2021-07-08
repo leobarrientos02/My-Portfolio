@@ -56,16 +56,20 @@ a {
   text-decoration: none;
 }
 footer {
-  background: $gray-text;
+  background: $background-color;
   display: flex;
   color: white;
-  padding: 1rem 6%;
+  min-height: 10vh;
+  padding: 0% 5%;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
+  h4 {
+    font-size: 2rem;
+  }
 
   #github,
   #linkedin {
@@ -75,7 +79,7 @@ footer {
   }
   ul {
     display: flex;
-    flex: 1 1 20rem;
+    flex: 1 1 40rem;
     justify-content: space-between;
     align-items: center;
   }
