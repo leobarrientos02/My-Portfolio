@@ -25,13 +25,13 @@ nav {
 
 .intro {
   height: 100%;
-  width: 85%;
+  width: 90%;
   margin: auto;
   flex-wrap: wrap;
   @include flex(space-between, center, row);
   h2 {
-    font-size: 5.5rem;
-    padding-top: 2rem;
+    font-size: 5.1rem;
+    padding: 1rem 0rem;
     background: $gradient;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -73,8 +73,9 @@ nav {
 .intro-images {
   flex: 1 1 40rem;
   svg {
-    width: 90%;
-    height: 90%;
+    padding-left: 5rem;
+    width: 86%;
+    height: 86%;
     object-fit: cover;
   }
 }

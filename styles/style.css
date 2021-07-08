@@ -86,9 +86,6 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
 
 footer h4 {
@@ -195,7 +192,7 @@ nav ul {
 
 .intro {
   height: 100%;
-  width: 85%;
+  width: 90%;
   margin: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -215,8 +212,8 @@ nav ul {
 }
 
 .intro h2 {
-  font-size: 5.5rem;
-  padding-top: 2rem;
+  font-size: 5.1rem;
+  padding: 1rem 0rem;
   background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#38a4d3));
   background: linear-gradient(left, #38d39f, #38a4d3);
   background-clip: text;
@@ -268,8 +265,9 @@ nav ul {
 
 .intro-text svg,
 .intro-images svg {
-  width: 90%;
-  height: 90%;
+  padding-left: 5rem;
+  width: 86%;
+  height: 86%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -365,13 +363,102 @@ nav ul {
   }
 }
 
+h2 {
+  font-size: 3.2rem;
+  padding: 2rem;
+  margin: 3rem;
+}
+
+.contact {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact h2 {
+  font-size: 5.1rem;
+  padding: 1rem 0rem;
+  background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#38a4d3));
+  background: linear-gradient(left, #38d39f, #38a4d3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.contact h3 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+
+.contact p {
+  padding-top: 2rem;
+  color: #2c2c2c;
+  font-size: 2.6rem;
+}
+
+.contact .splash {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  top: 0%;
+  right: 0%;
+}
+
+.active {
+  background: #2c2c2c;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+.contact-text,
+.contact-images {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.contact-text svg,
+.contact-images svg {
+  padding-left: 5rem;
+  width: 95%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.splash {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  top: 0%;
+  right: 0%;
+}
+
 footer {
-  position: relative;
-  margin-top: 3rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .form-section {
-  min-width: 60vh;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,11 +472,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .form-section form {
-  padding: 3rem 10rem;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
   display: -webkit-box;
@@ -405,32 +491,32 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
-.form-section form input,
-.form-section form textarea {
-  margin: 2rem;
+.form-section textarea {
+  margin: 1rem;
 }
 
-.form-section form input:focus,
-.form-section form textarea:focus {
+.form-section textarea:focus {
   outline: 2px solid black;
 }
 
-.form-section form textarea {
+.form-section textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
+  resize: none;
 }
 
-.form-section form button {
+.form-section button {
   width: 100%;
   padding: 2rem;
   background: #154353;
   color: white;
 }
 
-.form-section form button:focus {
+.form-section button:focus {
   background: #33696b;
 }
 
