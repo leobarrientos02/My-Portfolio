@@ -30,7 +30,7 @@ nav {
   flex-wrap: wrap;
   @include flex(space-between, center, row);
   h2 {
-    font-size: 6.3rem;
+    font-size: 5.5rem;
     padding-top: 2rem;
     background: $gradient;
     background-clip: text;
@@ -38,7 +38,7 @@ nav {
     display: inline-block;
   }
   h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 2rem 0rem;
   }
   p {
@@ -69,16 +69,12 @@ nav {
   padding: 1rem 3rem;
   border-radius: 2rem;
 }
-.intro-text {
-  background: white;
-}
-
 .intro-text,
 .intro-images {
   flex: 1 1 40rem;
   svg {
-    width: 93%;
-    height: 93%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
   }
 }

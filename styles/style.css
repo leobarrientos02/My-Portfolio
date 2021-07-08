@@ -14,6 +14,10 @@ html {
           animation: opening 1s ease-in-out;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* ANIMATIONS*/
 @-webkit-keyframes opening {
   from {
@@ -69,21 +73,25 @@ a {
 }
 
 footer {
-  background: -webkit-gradient(linear, left top, right top, from(#2aa078), to(#249bce));
-  background: linear-gradient(left, #2aa078, #249bce);
+  background: #2c2c2c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: white;
-  padding: 3rem 6%;
+  padding: 1rem 6%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
-footer #github {
+footer #github,
+footer #linkedin {
   width: 3rem;
   height: 3rem;
   -o-object-fit: cover;
@@ -202,7 +210,7 @@ nav ul {
 }
 
 .intro h2 {
-  font-size: 6.3rem;
+  font-size: 5.5rem;
   padding-top: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#38a4d3));
   background: linear-gradient(left, #38d39f, #38a4d3);
@@ -212,7 +220,7 @@ nav ul {
 }
 
 .intro h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 2rem 0rem;
 }
 
@@ -246,10 +254,6 @@ nav ul {
   border-radius: 2rem;
 }
 
-.intro-text {
-  background: white;
-}
-
 .intro-text,
 .intro-images {
   -webkit-box-flex: 1;
@@ -259,8 +263,8 @@ nav ul {
 
 .intro-text svg,
 .intro-images svg {
-  width: 93%;
-  height: 93%;
+  width: 90%;
+  height: 90%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -353,6 +357,85 @@ nav ul {
   to {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 53%;
+  }
+  .splash {
+    display: none;
+  }
+  svg {
+    width: 80%;
+  }
+  nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  svg {
+    height: 60%;
+  }
+  .main-head {
+    width: 100%;
+  }
+  nav {
+    margin: 2rem;
+  }
+  nav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+  }
+  nav ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60rem;
+            flex: 1 1 60rem;
+    margin: 2rem 0rem;
+  }
+  .intro-text {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .intro-images {
+    text-align: center;
+  }
+  .intro-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .intro-social a {
+    margin: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
