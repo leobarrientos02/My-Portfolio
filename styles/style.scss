@@ -40,7 +40,9 @@ $gray-text: #2c2c2c;
     font-size: 45%;
   }
   svg {
-    height: 60%;
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
   }
   .main-head {
     width: 100%;
@@ -71,6 +73,15 @@ $gray-text: #2c2c2c;
     form {
       padding: 0rem;
       width: 100%;
+    }
+    footer {
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer ul {
+      flex: 1 1 60rem;
+      margin: 2rem 0rem;
     }
   }
 }
