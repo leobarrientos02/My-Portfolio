@@ -1,26 +1,45 @@
-.projects {
+.github {
   width: 100%;
+  @include flex(center, center, row);
+  padding: 2rem 0rem;
   margin: auto;
-  min-height: 90vh;
-  @include flex(space-between, center, row);
-  text-align: center;
-  flex-wrap: wrap;
   h2 {
-    padding: 3rem;
+    font-size: 2rem;
   }
-  h3 {
-    margin: 2rem;
-  }
-  img {
-    object-fit: cover;
-    width: 60%;
-    height: 60%;
-    border-radius: 2rem;
+  #github {
+    margin-top: 0.5rem;
+    height: 3rem;
+    width: 3rem;
   }
 }
 
-.travelly,
-.gallery {
-  flex: 1 1 60rem;
-  @include flex(center, center, column);
+.web-dev {
+  width: 90%;
+  @include flex(center, center, row);
+  padding: 2rem 0rem;
+  margin: auto;
+  display: grid;
+  h2 {
+    width: 100%;
+    text-decoration: underline;
+  }
+  p {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.software-dev {
+  width: 90%;
+  @include flex(center, center, row);
+  padding: 2rem 0rem;
+  margin: auto;
+  display: grid;
+  h2 {
+    width: 100%;
+    text-decoration: underline;
+  }
+  p {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
