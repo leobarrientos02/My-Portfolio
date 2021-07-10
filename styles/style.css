@@ -363,6 +363,10 @@ nav ul {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .github {
   width: 100%;
   display: -webkit-box;
@@ -393,7 +397,7 @@ nav ul {
 }
 
 .web-dev {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,18 +413,37 @@ nav ul {
           flex-direction: row;
   padding: 2rem 0rem;
   margin: auto;
-  display: -ms-grid;
-  display: grid;
+  display: flexbox;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .web-dev h2 {
-  width: 100%;
+  padding: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-decoration: underline;
+}
+
+.web-dev h3 {
+  padding: 2rem;
 }
 
 .web-dev p {
   font-size: 2rem;
   text-align: center;
+}
+
+.web-dev img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 40rem;
+  max-height: 40rem;
+  border-radius: 2px;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
 }
 
 .software-dev {
@@ -440,8 +463,6 @@ nav ul {
           flex-direction: row;
   padding: 2rem 0rem;
   margin: auto;
-  display: -ms-grid;
-  display: grid;
 }
 
 .software-dev h2 {
