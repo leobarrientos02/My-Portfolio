@@ -2,4 +2,4 @@
  My Web Development Portfolio using Html, Css, and Sass
  
  #Link
- leonelbarrientos.netlify.app
+ https://leonelbarrientos.netlify.app/
