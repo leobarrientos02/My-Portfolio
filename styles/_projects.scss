@@ -83,36 +83,50 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  .box {
+  .software-text {
+    width: 100%;
     text-align: center;
   }
-  .travelly {
+  .card-game {
     order: 1;
-    align-self: center;
+    margin: 1rem;
   }
-  .gallery {
+  .sorting-algorithms {
     order: 2;
-    align-content: center;
+    margin: 1rem;
   }
-  .toDo {
+  .python-gui {
     order: 3;
+    margin: 1rem;
+  }
+  .border-div {
+    border: 1.5px solid $background-color;
+    border-radius: 1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    flex: 1 1 20rem;
+  }
+  #algorithm-video,
+  #python-gui-video,
+  #card-game-video {
+    height: 30rem;
+    width: 50rem;
+    padding-top: 0.5rem;
+    justify-content: center;
     align-content: center;
+    border-radius: 1rem;
+    object-fit: contain;
   }
   h2 {
     padding: 2rem;
     text-decoration: underline;
   }
   h3 {
+    text-align: center;
     padding: 2rem;
   }
   p {
     font-size: 2rem;
     text-align: center;
-  }
-  img {
-    object-fit: cover;
-    max-width: 30rem;
-    max-height: 30rem;
-    border-radius: 2px;
   }
 }
