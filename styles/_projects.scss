@@ -35,6 +35,10 @@
   .box {
     text-align: center;
   }
+  #text-help {
+    font-size: 1.5rem;
+    color: $background-color;
+  }
   .web-text {
     width: 100%;
   }
@@ -86,6 +90,11 @@
   .software-text {
     width: 100%;
     text-align: center;
+  }
+  #text-help {
+    font-size: 1.5rem;
+    color: $background-color;
+    padding-top: 1rem;
   }
   .card-game {
     order: 1;

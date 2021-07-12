@@ -217,6 +217,7 @@ nav ul {
   background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#38a4d3));
   background: linear-gradient(left, #38d39f, #38a4d3);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -428,6 +429,11 @@ nav ul {
   text-align: center;
 }
 
+.web-dev #text-help {
+  font-size: 1.5rem;
+  color: #154353;
+}
+
 .web-dev .web-text {
   width: 100%;
 }
@@ -512,6 +518,12 @@ nav ul {
 .software-dev .software-text {
   width: 100%;
   text-align: center;
+}
+
+.software-dev #text-help {
+  font-size: 1.5rem;
+  color: #154353;
+  padding-top: 1rem;
 }
 
 .software-dev .card-game {
