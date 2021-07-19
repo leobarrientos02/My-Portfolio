@@ -458,12 +458,31 @@ nav ul {
 }
 
 .web-dev .toDo {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.web-dev .toDo img {
+  height: 27.8rem;
+  border-radius: 1.3rem;
+}
+
+.web-dev .calculator {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
+}
+
+.web-dev .calculator img {
+  height: 27.8rem;
+  border-radius: 1.3rem;
 }
 
 .web-dev h2 {
