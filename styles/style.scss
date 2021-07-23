@@ -71,6 +71,7 @@ $gray-text: #2c2c2c;
     @include flex(center, center, row);
     a {
       margin: 2rem;
+      margin-bottom: 8rem;
     }
     form {
       padding: 0rem;
