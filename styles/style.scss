@@ -44,16 +44,20 @@ $gray-text: #2c2c2c;
   }
   .main-head {
     width: 100%;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
   }
   nav {
-    margin: 2rem;
+    width: 100%;
     .logo {
       @include flex(center, center, column);
       flex: 1 1 20rem;
+      margin-right: 3rem;
     }
     ul {
-      flex: 1 1 60rem;
-      margin: 2rem 0rem;
+      justify-content: space-evenly;
+      width: 100%;
     }
   }
   .intro-text {
@@ -82,8 +86,18 @@ $gray-text: #2c2c2c;
       margin: 2rem 0rem;
     }
   }
-  video {
-    width: 30rem;
-    height: 30rem;
+  .software-dev {
+    display: none;
+  }
+  .contact {
+    width: 100%;
+    .form-section {
+      width: 100%;
+      height: fit-content;
+      margin-top: 2rem;
+    }
+    .contact-text {
+      margin-top: 2rem;
+    }
   }
 }
