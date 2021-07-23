@@ -855,5 +855,9 @@ footer {
             flex: 1 1 60rem;
     margin: 2rem 0rem;
   }
+  video {
+    width: 30rem;
+    height: 30rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
