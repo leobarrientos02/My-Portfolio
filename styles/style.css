@@ -485,6 +485,20 @@ nav ul {
   border-radius: 1.3rem;
 }
 
+.web-dev .beat {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.web-dev .beat img {
+  height: 27.8rem;
+  border-radius: 1.3rem;
+}
+
 .web-dev h2 {
   text-align: center;
   padding: 2rem;
@@ -844,6 +858,7 @@ footer {
   }
   .intro-social a {
     margin: 2rem;
+    margin-bottom: 8rem;
   }
   .intro-social form {
     padding: 0rem;
