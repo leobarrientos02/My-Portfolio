@@ -822,9 +822,6 @@ footer {
             justify-content: center;
   }
   .active {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     background: none;
     color: black;
     text-decoration: underline;
@@ -833,6 +830,7 @@ footer {
   }
   nav {
     width: 100%;
+    padding: 0;
   }
   nav .logo {
     display: -webkit-box;
@@ -851,12 +849,13 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 20rem;
             flex: 1 1 20rem;
-    margin-right: 3rem;
   }
   nav ul {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 100%;
   }
   .intro-text {
