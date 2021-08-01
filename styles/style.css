@@ -93,7 +93,8 @@ footer h4 {
 }
 
 footer #github,
-footer #linkedin {
+footer #linkedin,
+footer #instagram {
   width: 3rem;
   height: 3rem;
   -o-object-fit: cover;
