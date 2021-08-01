@@ -821,6 +821,16 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .active {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: none;
+    color: black;
+    text-decoration: underline;
+    padding: 0;
+    border-radius: none;
+  }
   nav {
     width: 100%;
   }
