@@ -52,14 +52,6 @@
     flex: 1 1 20rem;
   }
   .toDo {
-    order: 4;
-    flex: 1 1 20rem;
-    img {
-      height: 27.8rem;
-      border-radius: 1.3rem;
-    }
-  }
-  .calculator {
     order: 3;
     flex: 1 1 20rem;
     img {
@@ -67,7 +59,23 @@
       border-radius: 1.3rem;
     }
   }
+  .calculator {
+    order: 5;
+    flex: 1 1 20rem;
+    img {
+      height: 27.8rem;
+      border-radius: 1.3rem;
+    }
+  }
   .beat {
+    order: 6;
+    flex: 1 1 20rem;
+    img {
+      height: 27.8rem;
+      border-radius: 1.3rem;
+    }
+  }
+  .color {
     order: 4;
     flex: 1 1 20rem;
     img {
@@ -93,7 +101,8 @@
     max-height: 35rem;
     border-radius: 2px;
   }
-  #ToDo {
+  #ToDo,
+  #color {
     border-radius: 5px;
     height: 27.3rem;
     object-fit: cover;
