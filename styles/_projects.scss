@@ -68,6 +68,14 @@
     }
   }
   .beat {
+    order: 7;
+    flex: 1 1 20rem;
+    img {
+      height: 27.8rem;
+      border-radius: 1.3rem;
+    }
+  }
+  .culture {
     order: 6;
     flex: 1 1 20rem;
     img {
@@ -102,7 +110,12 @@
     border-radius: 2px;
   }
   #ToDo,
-  #color {
+  #color,
+  #culture,
+  #travelly,
+  #gallery,
+  #calc,
+  #beat {
     border-radius: 5px;
     height: 27.3rem;
     object-fit: cover;
