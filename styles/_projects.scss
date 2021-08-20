@@ -60,7 +60,7 @@
     }
   }
   .calculator {
-    order: 5;
+    order: 8;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
@@ -69,6 +69,14 @@
   }
   .beat {
     order: 7;
+    flex: 1 1 20rem;
+    img {
+      height: 27.8rem;
+      border-radius: 1.3rem;
+    }
+  }
+  .photon {
+    order: 5;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
@@ -115,6 +123,7 @@
   #travelly,
   #gallery,
   #calc,
+  #photon,
   #beat {
     border-radius: 5px;
     height: 27.3rem;
