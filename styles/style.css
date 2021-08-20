@@ -512,6 +512,7 @@ nav ul {
 }
 
 .web-dev .photon img {
+  border: 0.01px solid gray;
   height: 27.8rem;
   border-radius: 1.3rem;
 }
