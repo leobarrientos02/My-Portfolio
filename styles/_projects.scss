@@ -52,15 +52,24 @@
     flex: 1 1 20rem;
   }
   .toDo {
-    order: 3;
+    order: 4;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
       border-radius: 1.3rem;
     }
   }
+  .waves {
+    order: 3;
+    flex: 1 1 20rem;
+    img {
+      object-position: center;
+      height: 27.8rem;
+      border-radius: 1.3rem;
+    }
+  }
   .calculator {
-    order: 8;
+    order: 9;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
@@ -68,7 +77,7 @@
     }
   }
   .beat {
-    order: 7;
+    order: 8;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
@@ -93,7 +102,7 @@
     }
   }
   .color {
-    order: 4;
+    order: 7;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
