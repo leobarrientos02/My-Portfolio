@@ -505,6 +505,8 @@ nav ul {
 .web-dev .capture img {
   -o-object-position: center;
      object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 27.8rem;
   border-radius: 1.3rem;
 }
