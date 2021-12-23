@@ -52,14 +52,14 @@
     flex: 1 1 20rem;
   }
   .toDo {
-    order: 4;
+    order: 9;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
       border-radius: 1.3rem;
     }
   }
-  .waves {
+  .capture {
     order: 3;
     flex: 1 1 20rem;
     img {
@@ -68,8 +68,18 @@
       border-radius: 1.3rem;
     }
   }
+  .waves {
+    order: 4;
+    flex: 1 1 20rem;
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 27.8rem;
+      border-radius: 1.3rem;
+    }
+  }
   .calculator {
-    order: 9;
+    order: 10;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
