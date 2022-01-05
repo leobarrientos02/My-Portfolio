@@ -48,13 +48,23 @@
     flex: 1 1 20rem;
   }
   .gallery {
-    order: 2;
+    order: 10;
     flex: 1 1 20rem;
   }
   .toDo {
     order: 9;
     flex: 1 1 20rem;
     img {
+      height: 27.8rem;
+      border-radius: 1.3rem;
+    }
+  }
+  .inferno {
+    order: 2;
+    flex: 1 1 20rem;
+    img {
+      object-position: center;
+      object-fit: cover;
       height: 27.8rem;
       border-radius: 1.3rem;
     }
@@ -81,7 +91,7 @@
     }
   }
   .calculator {
-    order: 10;
+    order: 11;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
