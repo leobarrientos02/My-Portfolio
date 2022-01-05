@@ -48,7 +48,7 @@
     flex: 1 1 20rem;
   }
   .gallery {
-    order: 10;
+    order: 7;
     flex: 1 1 20rem;
   }
   .toDo {
@@ -64,6 +64,7 @@
     flex: 1 1 20rem;
     img {
       object-position: center;
+      border: 1px solid lightgrey;
       object-fit: cover;
       height: 27.8rem;
       border-radius: 1.3rem;
@@ -84,7 +85,7 @@
     flex: 1 1 20rem;
     img {
       object-fit: cover;
-      border: 2px solid lightgrey;
+      border: 1px solid lightgrey;
       object-position: center;
       height: 27.8rem;
       border-radius: 1.3rem;
@@ -99,7 +100,7 @@
     }
   }
   .beat {
-    order: 8;
+    order: 10;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
@@ -124,7 +125,7 @@
     }
   }
   .color {
-    order: 7;
+    order: 8;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
@@ -156,7 +157,9 @@
   #gallery,
   #calc,
   #photon,
-  #beat {
+  #beat,
+  #inferno,
+  #capture {
     border-radius: 5px;
     height: 27.3rem;
     object-fit: cover;
