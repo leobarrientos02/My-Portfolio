@@ -59,6 +59,28 @@
       border-radius: 1.3rem;
     }
   }
+  .iphone {
+    order: 5;
+    flex: 1 1 20rem;
+    img {
+      object-position: center;
+      border: 1px solid lightgrey;
+      object-fit: cover;
+      height: 27.8rem;
+      border-radius: 1.3rem;
+    }
+  }
+  .fashion {
+    order: 6;
+    flex: 1 1 20rem;
+    img {
+      object-position: center;
+      border: 1px solid lightgrey;
+      object-fit: cover;
+      height: 27.8rem;
+      border-radius: 1.3rem;
+    }
+  }
   .inferno {
     order: 2;
     flex: 1 1 20rem;
@@ -108,7 +130,7 @@
     }
   }
   .photon {
-    order: 5;
+    order: 6;
     flex: 1 1 20rem;
     img {
       border: 1px solid lightgrey;
@@ -117,7 +139,7 @@
     }
   }
   .culture {
-    order: 6;
+    order: 9;
     flex: 1 1 20rem;
     img {
       height: 27.8rem;
