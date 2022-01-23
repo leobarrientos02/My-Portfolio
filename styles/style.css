@@ -955,15 +955,48 @@ button:hover {
 
 @media screen and (max-width: 754px) {
   form {
+    -webkit-transform: translateY(-18%);
+            transform: translateY(-18%);
     width: 90vw;
-    min-height: 80vh;
+    height: 90vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 7rem 3rem;
+    padding: 3rem;
   }
-  .line-svg {
+  form button {
+    width: 100%;
+  }
+  form .contact-left {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+  }
+  form .contact-left .title {
+    font-size: 2.5rem;
+  }
+  form .contact-right {
+    height: 50vh;
+  }
+  form .line-svg {
+    display: block;
     width: 100%;
   }
   #character {

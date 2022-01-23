@@ -127,13 +127,34 @@ button {
 @media screen and (max-width: 754px) {
 
   form{
-      width: 90vw;
-      min-height: 80vh;
-      flex-direction: column;
-      padding: 7rem 3rem;
-  }
-  .line-svg{
+    transform: translateY(-18%);
+    width: 90vw;
+    height: 90vh;
+    flex-direction: column;
+    padding: 3rem;
+    button{
       width: 100%;
+    }
+    .contact-left{
+      flex: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 20vh;
+      width: 100%;
+      text-align: center;
+      .title{
+        font-size: 2.5rem;
+      }
+    }
+    .contact-right{
+      height: 50vh;
+    }
+    .line-svg{
+      display: block;
+      width: 100%;
+    }
   }
   #character{
       transform: scale(0.4) translate(0%,36%);
