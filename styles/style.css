@@ -272,6 +272,12 @@ nav ul {
   margin-right: 5rem;
 }
 
+.intro-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 .active {
   background: #2c2c2c;
   color: white;
@@ -762,8 +768,8 @@ nav ul {
 .software-dev #algorithm-video,
 .software-dev #python-gui-video,
 .software-dev #card-game-video {
-  height: 30rem;
-  width: 50rem;
+  height: 25rem;
+  width: 40rem;
   padding-top: 0.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -791,46 +797,22 @@ nav ul {
   text-align: center;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .contact {
   height: 100%;
-  width: 90%;
-  margin: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.contact h2 {
-  font-size: 5.1rem;
-  padding: 1rem 0rem;
-  background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#38a4d3));
-  background: linear-gradient(left, #38d39f, #38a4d3);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-
-.contact h3 {
-  font-size: 3rem;
-  padding: 2rem 0rem;
-}
-
-.contact p {
-  padding-top: 2rem;
-  color: #2c2c2c;
-  font-size: 2.6rem;
 }
 
 .contact .splash {
@@ -838,108 +820,175 @@ nav ul {
   z-index: -1;
   height: 100%;
   top: 0%;
-  right: 0%;
+  right: -8%;
 }
 
-.active {
-  background: #2c2c2c;
-  color: white;
-  padding: 1rem 3rem;
+form {
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+  min-height: 60vh;
+  width: 60vw;
+  background: white;
+  color: #777474;
   border-radius: 2rem;
+  padding: 3rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
-.contact-text,
-.contact-images {
+.title {
+  font-size: 2.5rem;
+  color: #6391e8;
+}
+
+.description {
+  font-size: 2rem;
+}
+
+.contact-right,
+.contact-left {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.contact-text svg,
-.contact-images svg {
-  padding-left: 5rem;
-  width: 95%;
-  height: 90%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.splash {
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  top: 0%;
-  right: 0%;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-.form-section {
-  width: 100%;
-  height: 100vh;
+.contact-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 1rem;
-}
-
-.form-section form {
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2rem;
-  border-radius: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.form-section textarea {
-  margin: 1rem;
-}
-
-.form-section textarea:focus {
-  outline: 2px solid black;
-}
-
-.form-section textarea {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  resize: none;
-}
-
-.form-section button {
+.input {
   width: 100%;
-  padding: 2rem;
-  background: #154353;
-  color: white;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border: none;
+  outline: none;
+  color: #777474;
+  font-size: 1.5rem;
 }
 
-.form-section button:focus {
-  background: #33696b;
+.input-container {
+  position: relative;
+}
+
+.placeholder {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  padding: 0.3rem 0rem;
+  font-size: 2rem;
+  opacity: 0.6;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.line-svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  opacity: 0.8;
+}
+
+.checkbox-label {
+  font-size: 0.7rem;
+}
+
+.promo-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+button {
+  font-family: "Poppins" sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  background: #6190e8;
+  color: white;
+  border-radius: 0.2rem;
+  border-style: none;
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+button:hover {
+  background: #4c84ec;
+}
+
+#character {
+  position: absolute;
+  -webkit-transform: scale(0.7) translate(0%, 36%);
+          transform: scale(0.7) translate(0%, 36%);
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.submitted {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #777474;
+  font-size: 1rem;
+  pointer-events: none;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+@media screen and (max-width: 754px) {
+  form {
+    width: 90vw;
+    min-height: 80vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7rem 3rem;
+  }
+  .line-svg {
+    width: 100%;
+  }
+  #character {
+    -webkit-transform: scale(0.4) translate(0%, 36%);
+            transform: scale(0.4) translate(0%, 36%);
+  }
+}
+
+@media screen and (max-width: 754px) {
+  form {
+    width: 90vw;
+    height: 70vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem;
+  }
+  .line-svg {
+    width: 100%;
+  }
+  #character {
+    -webkit-transform: scale(0.4) translate(0%, 36%);
+            transform: scale(0.4) translate(0%, 36%);
+  }
 }
 
 @media screen and (max-width: 1200px) {
